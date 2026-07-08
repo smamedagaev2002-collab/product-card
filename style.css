@@ -1,0 +1,64 @@
+.cards{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+
+
+
+.title {
+    text-align: center;
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 78px;
+    margin: 0;
+    color: #515076;
+    
+}
+
+body    {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+.main-text {
+    color: #515076;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+
+}
+.button {
+    background-color: rgb(216, 208, 208);
+    color: rgb(143, 122, 128);
+    border: 5px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 10px;
+}
+
+b {
+    font-weight: 700;
+}
+
+li {
+    color: #515076;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+p {
+     color: #515076;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+span {
+     color: #515076;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+}
