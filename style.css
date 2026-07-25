@@ -1,0 +1,147 @@
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #515076;
+    background: url("images/bg\ 1.png") no-repeat top left;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.catalog__container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.catalog__title {
+    margin-bottom: 50px;
+
+    text-align: center;
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 78px;
+}
+
+.catalog__list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.catalog__item {
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    padding: 30px 25px;
+    background: #f7f7fa;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(81,80,118,.08);
+}
+
+.catalog__image {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.catalog__application {
+    margin-bottom: 6px;
+
+    color: #a5a3b9;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    font-size: 12px;
+}
+
+.catalog__name {
+    margin-bottom: 10px;
+
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+}
+
+.catalog__description {
+    margin-bottom: 18px;
+}
+
+.catalog__composition-title {
+    margin-bottom: 6px;
+
+    display: block;
+    font-weight: 600;
+}
+
+.catalog__composition-list {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.catalog__composition-item {
+    position: relative;
+    padding-left: 18px;
+    margin-bottom: 5px;
+}
+
+.catalog__composition-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 6px;
+    height: 6px;
+    border: 1px solid #B28B72;
+    border-radius: 50%; 
+}
+
+.catalog__price {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    border-top: 1px solid rgba(81,80,118,.08);
+}
+
+.catalog__price-title {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.catalog__price-value {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+
+    .catalog__title {
+        font-size: 36px;
+        line-height: 44px;
+        margin-bottom: 30px;
+    }
+
+    .catalog__item {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .catalog__price {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+}
