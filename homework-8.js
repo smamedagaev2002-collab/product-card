@@ -51,7 +51,7 @@ function showProperty(obj, propName) {
 
 // Проверка:
 showProperty(car, "brand");                 // "Toyota"
-showProperty(car, "цвет");                // "чёрный"
+showProperty(car, "color");                // "чёрный"
 showProperty(car, "максимальная скорость"); // 220
 showProperty(car, "owner");                 // объект владельца
 
