@@ -51,6 +51,25 @@ function getCardsCountFromUser() {
   return userInput === null ? products.length : count;
 }
 
+// Функция отображения карточек
+function renderCards(cards) {
+  const cardsContainer = document.querySelector('.cards');
+
+  cardsContainer.innerHTML = '';
+
+  cards.forEach(function(product) {
+    const card = document.createElement('div');
+
+    card.classList.add('card');
+
+    card.innerHTML = `
+      <img src="${product.image}" alt="${product.name}">
+      <h3>${product.name}</h3>
+      <p>${product.application}</p>
+      <p>${product.description}</p>
+      <p>${product.price}</p>
+    `;
+
 // Инициализация страницы
 function init() {
   const cardsCount = getCardsCountFromUser();
