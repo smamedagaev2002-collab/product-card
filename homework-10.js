@@ -70,6 +70,11 @@ function renderCards(cards) {
       <p>${product.price}</p>
     `;
 
+    cardsContainer.append(card);
+  });
+}
+
+
 // Инициализация страницы
 function init() {
   const cardsCount = getCardsCountFromUser();
