@@ -14,6 +14,8 @@
     <button id="output-console-log">Вывести сообщение в консоль лог</button>
     <button id="change-self-color">Сменить свой цвет</button>
     <main class="catalog">
+        
+  
             <div class="catalog__container">
                 <h1 class="catalog__title">Выбери свой продукт</h1>
                 <ul class="catalog__list">
@@ -105,11 +107,113 @@
                 </ul>
             </div>
         </main>
+
+<div class="register-btn-wrap">
+  <button id="register-btn" type="button">Регистрация</button>
+</div>
+
+<!-- ---------- Модальное окно ---------- -->
+<div class="modal" id="modal">
+  <div class="overlay" id="overlay">
+    <div class="modal-window">
+      <button class="modal-close" id="modal-close" type="button" aria-label="Закрыть">&times;</button>
+
+      <h2>Регистрация</h2>
+
+      <form id="register-form" novalidate>
+        <div class="reg-field">
+          <label for="reg-firstname">Имя</label>
+          <input type="text" id="reg-firstname" name="firstname" placeholder="Введите имя" required>
+        </div>
+
+        <div class="reg-field">
+          <label for="reg-lastname">Фамилия</label>
+          <input type="text" id="reg-lastname" name="lastname" placeholder="Введите фамилию" required>
+        </div>
+
+        <div class="reg-field">
+          <label for="reg-birthdate">Дата рождения</label>
+          <input type="date" id="reg-birthdate" name="birthdate" required>
+        </div>
+
+        <div class="reg-field">
+          <label for="reg-login">Логин</label>
+          <input type="text" id="reg-login" name="login" placeholder="Придумайте логин" required minlength="3">
+        </div>
+
+        <div class="reg-field">
+          <label for="reg-password">Пароль</label>
+          <input type="password" id="reg-password" name="password" placeholder="Придумайте пароль" required minlength="6">
+        </div>
+
+        <div class="reg-field">
+          <label for="reg-password-repeat">Повтор пароля</label>
+          <input type="password" id="reg-password-repeat" name="passwordRepeat" placeholder="Повторите пароль" required minlength="6">
+        </div>
+
+        <div class="reg-error" id="reg-error"></div>
+
+        <button type="submit">Зарегистрироваться</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+<footer class="footer">
+            <div class="footer__container">
+                <div class="footer__brand">
+                    <h2 class="footer__logo">Product Cards</h2>
+                    <p class="footer__slogan">У Нас Самые Лучшие Продукты Для Кожи!</p>
+                <div class="footer__social">
+                    <a href="#" aria-label="Telegram" class="footer__social-link">✈</a>
+                    <a href="#" aria-label="ВКонтакте" class="footer__social-link">VK</a>
+                </div>
+            </div>
+
+      
+      <div class="footer__subscribe">
+        <p class="footer__subscribe-title">Подпишись на наши акции:</p>
+
+        <form class="subscribe-form" id="subscribe-form" action="#" method="post" novalidate>
+          
+          <label for="email" class="visually-hidden">Электронная почта</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="subscribe-form__input"
+            placeholder="Введи Email..."
+            required
+          >
+          <button type="submit" class="subscribe-form__button">Подписаться</button>
+        </form>
+      </div>
+
+      
+      <nav class="footer__nav" aria-label="Быстрые ссылки">
+        <h3 class="footer__nav-title">Быстрые ссылки</h3>
+        <ul class="footer__nav-list">
+          <li><a href="#" class="footer__nav-link">Главная</a></li>
+          <li><a href="#" class="footer__nav-link">Магазин</a></li>
+          <li><a href="#" class="footer__nav-link">Контакты</a></li>
+        </ul>
+      </nav>
+
+    </div>
+
+    <div class="footer__bottom">
+      <hr class="footer__divider">
+      <p class="footer__copyright">www.product-cards.com © all right reserve</p>
+    </div>
+  </footer>
         <script src="main.js"></script>
         <script src="homework-7.js"></script>
         <script src="homework-8.js"></script>
         <script src="homework-9.js" type="module"></script>
         <script src="homework-10.js" type="module"></script>
+        <script src="homework-11.js" type="module"></script>
     </body>
 </html>
 
