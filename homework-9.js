@@ -1,7 +1,17 @@
+import Modal from "./modal.js";
+
+const registerModal = new Modal("modal");
+
+const openBtn = document.getElementById("register-btn");
+openBtn.addEventListener("click", () => {
+    registerModal.open();
+});
+
+
 //Задание 1
 
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const fromFive = number.filter(num => num >= 5);
+const fromFive = numbers.filter(num => num >= 5);
 console.log(fromFive);
 
 //Задание 2
@@ -16,8 +26,6 @@ console.log(hasAvatar); // false
 function reverseArray(arr) {
     return [...arr].reverse();
 }
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const movies = ["Интерстеллар", "Начало", "Тёмный рыцарь", "Дюна", "Матрица"];
 console.log(reverseArray(numbers)); // [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
 console.log(reverseArray(movies));  // ["Матрица", "Дюна", "Тёмный рыцарь", "Начало", "Интерстеллар"]
 
@@ -25,9 +33,9 @@ console.log(reverseArray(movies));  // ["Матрица", "Дюна", "Тёмн�
 
 import { comments } from './comments.js';
 
-//Задание 5
 
-const comEmails = comments.filter(comment => comment.email.includes(".com"));
+
+
 
 //Задание 6
 
@@ -49,7 +57,7 @@ const validatedComments = comments.map(comment => ({
 }));
 
 //Задание 9-10
-import { comments } from './comments.js';
+
 
 
 // Через map

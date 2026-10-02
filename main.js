@@ -1,3 +1,11 @@
+import './homework-7.js'
+import './homework-8.js'
+import './homework-9.js'
+import './homework-10.js'
+import './homework-11.js'
+
+
+
 const productCards = document.querySelectorAll('.catalog__item');
 const changeColorAllCardButton = document.querySelector('#change-color-all-card');
 const greenColorHash = '#00ff3c';
