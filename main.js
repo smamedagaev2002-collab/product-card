@@ -1,3 +1,5 @@
+
+
 import './homework-7.js'
 import './homework-8.js'
 import './homework-9.js'
@@ -66,3 +68,5 @@ const catalogTitle = document.querySelector('.catalog__title');
 catalogTitle.addEventListener('mouseenter', () => {
   console.log(catalogTitle.textContent);
 });
+
+

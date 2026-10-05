@@ -1,11 +1,4 @@
-import Modal from "./modal.js";
 
-const registerModal = new Modal("modal");
-
-const openBtn = document.getElementById("register-btn");
-openBtn.addEventListener("click", () => {
-    registerModal.open();
-});
 
 
 //Задание 1
