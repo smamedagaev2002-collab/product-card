@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Модальные окна</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button class="button" id="registration-button">Регистрация</button>
+  <button class="button" id="auth-button">Аутентификация</button>
+
+  <div id="registration-modal" class="modal">
+    <button class="modal-close-button" type="button" aria-label="Закрыть">&times;</button>
+    <h2>Регистрация</h2>
+    <p>Пароль</p>
+    <p>Повторите пароль</p>
+    <p>Логин</p>
+    <p>Почта</p>
+  </div>
+
+  <div id="auth-modal" class="modal">
+    <button class="modal-close-button" type="button" aria-label="Закрыть">&times;</button>
+    <h2>Аутентификация</h2>
+    <p>Логин</p>
+    <p>Пароль</p>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
